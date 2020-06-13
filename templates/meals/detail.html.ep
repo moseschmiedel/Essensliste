@@ -1,0 +1,21 @@
+% layout 'default';
+% title 'Essensdetails';
+<h1 class="title">Essensdetails</h1>
+
+<table class="meal-detail">
+    <tr><td class="column1"><b>Datum:</b></td><td>
+    %= $date
+    </td></tr>
+    <tr><td class="column1"><b>Kommentar:</b></td><td>
+    %= $comment
+    </td></tr>
+    <tr><td class="column1"><b>Verantwortlicher:</b></td><td>
+    % if (defined $user_url) {
+    <a href="<%= $user_url %>">
+    	%= $user
+    </a>
+    % } else {
+    	%= $user
+    % }
+    </td></tr>
+</table>

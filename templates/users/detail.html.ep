@@ -1,0 +1,23 @@
+% layout 'default';
+% title 'Nutzerinfo';
+<h1><%= $user->{name} %></h1>
+
+<h2>Verantwortliche Essen</h2>
+<table class="meal-list">
+	<tr>
+		<th class="column1">Essen</th>
+		<th class="column3">Kommentar</th>
+	</tr>
+	% for my $meal (@{$user->{meals}}) {
+		<tr>
+			<td class="column1">
+				<a href="<%= $meal->{meal_url} %>">
+					<%= $meal->{date} %>
+				</a>
+			    </td>
+			    <td class="column3">
+				<%= $meal->{comment} %>
+			    </td>
+		</tr>
+	% }
+</table>

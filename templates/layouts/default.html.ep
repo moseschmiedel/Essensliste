@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title><%= title %></title>
+<link rel="stylesheet" href="static/css/main.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+
+<body>
+	<a href="<%= url_for('index') %>">Home</a>
+    <div id="content">
+        <%= content %>
+    </div><!-- end content -->
+
+    <div id="footer">Copyright © Mose Schmiedel</div>
+</body>
+</html>
