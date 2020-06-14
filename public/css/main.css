@@ -1,0 +1,21 @@
+html,body {
+	text-align: center;
+}
+
+.hidden {
+	display: none;
+}
+
+#content {
+	margin: 100px auto;
+}
+
+table {
+	margin: auto;
+}
+
+footer {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+}
