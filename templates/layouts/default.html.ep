@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
+<html lang="de" dir="ltr">
   <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><%= title %></title>
     %= stylesheet '/css/main.css'
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   </head>
   <body>
-    <a href="<%= url_for('index')->to_abs %>">
+    <a href="<%= url_for('index')->to_abs %>" id="home-link">
       Home
     </a>
-    <div id="content">
+
+    <div class="main">
+      <main id="content">
         <%= content %>
-    </div><!-- end content -->
+      </main><!-- end content -->
+    </div>
 
     <footer class="footer">
       <p>Copyright © Mose Schmiedel, Timon Förster</p>

@@ -1,24 +1,50 @@
-html,body {
+body {
+	height: 100vh;
+  width: 100vw;
 	text-align: center;
+  display: grid;
+	align-items: center;
+	justify-items: center;
+  grid-template-columns: 100vw;
+  grid-template-rows: auto 80vh auto;
+  grid-template-areas:
+		"home"
+		"content"
+		"footer";
 }
 
-.hidden {
-	display: none;
+#home-link {
+	grid-area: home;
+	width: 100vw;
 }
 
-#content {
-	position: absolute;
-	left: 50%;
-	top: 40%;
-	transform: translateX(-50%) translateY(-50%);
+.main {
+	grid-area: content;
+	width: 100vw;
+	margin: 7vh 0 15vh 0;
 }
 
 table {
 	margin: auto;
 }
 
+.hidden {
+	display: none;
+}
+
 footer {
-	width: 100%;
-	position: fixed;
-	bottom: 0;
+	grid-area: footer;
+	width: 100vw;
+}
+
+@media only screen and (max-device-width: 600px) {
+
+	#home-link {
+		font-size: 120%;
+	}
+
+	footer {
+		font-size: 80%;
+	}
+
 }
