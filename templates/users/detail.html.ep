@@ -1,9 +1,9 @@
 % layout 'default';
 % title 'Nutzerinfo';
 <h1 class="title"><%= $user->{name} %></h1>
-
 <h2 class="subtitle">Verantwortliche Essen</h2>
-<table class="meal-list">
+
+<table class="table meal-list">
 	<tr>
 		<th class="column1">Essen</th>
 		<th class="column3">Kommentar</th>

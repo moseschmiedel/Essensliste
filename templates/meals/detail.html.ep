@@ -2,7 +2,7 @@
 % title 'Essensdetails';
 <h1 class="title">Essensdetails</h1>
 
-<table class="meal-detail">
+<table class="table meal-detail">
     <tr><td class="column1"><b>Datum:</b></td><td>
     %= $date
     </td></tr>
